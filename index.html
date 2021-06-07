@@ -13,6 +13,7 @@
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
 
         #nav-social-network {
@@ -20,7 +21,7 @@
             position: fixed;
             top: 50vh;
             width: 30px;
-            height: 100px;
+            z-index: 222;
         }
 
         ul {
@@ -28,24 +29,59 @@
             margin: 0;
             padding: 0;
         }
+
+        ul li {
+            padding: 2px;
+        }
     </style>
+    <link rel="stylesheet" href="style/slide.css">
 </head>
 
 <body>
     <h1 style="display:none;">Armenia</h1>
     <nav></nav>
-    <div>
-        <div id="nav-social-network">
-            <ul class="demo">
-                <li><img src="pictures/icons/facebook.png" width="30" /></li>
-                <li><img src="pictures/icons/twitter.png" width="30" /></li>
-                <li><img src="pictures/icons/linkedin.png" width="30" /></li>
-            </ul>
-        </div>
+    <div id="nav-social-network">
+        <ul class="demo">
+            <li><img src="pictures/icons/facebook.png" width="30" /></li>
+            <li><img src="pictures/icons/twitter.png" width="30" /></li>
+            <li><img src="pictures/icons/linkedin.png" width="30" /></li>
+        </ul>
     </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="pictures/home/1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pictures/home/2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pictures/home/3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pictures/home/4.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pictures/home/5.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+
     <footer></footer>
 
-
+    <script src="script/slide.js"></script>
 </body>
 
 </html>
