@@ -13,6 +13,7 @@
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
 
         #nav-social-network {
@@ -24,20 +25,34 @@
             height: 100px;
         }
     </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <h1 style="display:none;">Armenia</h1>
-    <nav></nav>
-    <div>
-        <div id="nav-social-network">
-            <ul class="demo">
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Coca Cola</li>
-            </ul>
+
+
+    <header>
+        <div id='logo'>
+            <a href='Home page'><img src="./pictures/logo.png" alt='Armenian flag'/></a>
         </div>
-    </div>
+        <div class='search-box'>
+            <input class='search-txt' type="search" placeholder="Search..."/>
+            <a class='search-btn' href='#'>
+                <img class='search-icon' src="./pictures/icons/search-icon.png" alt='search icon'>
+            </a>
+
+        </div>
+        <nav>
+            <ul>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>Regions</a></li>
+            <li> <a href='#'>Tours</a></li>
+            <li> <a href='#'>About us</a></li>
+        </ul>
+        </nav>
+    </header>
+ 
     <footer></footer>
 
 
