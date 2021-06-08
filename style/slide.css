@@ -1,0 +1,61 @@
+.homeSlide {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slideText {
+  padding: 8px 12px;
+  position: absolute;
+  top: 20vh;
+  width: 100%;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+}
+
+.slideText p {
+  font-size: 80px;
+}
+
+#armenia-text {
+  font-size: 140px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
