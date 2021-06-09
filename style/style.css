@@ -1,97 +1,95 @@
 * {
   box-sizing: border-box;
-}
-
-p {
   margin: 0;
-}
-
-body {
   padding: 0;
-  margin: 0;
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  background: black;
-  position: relative;
-  text-align: center;
-}
-header img {
-  border-radius: 4px;
-  padding: 5px;
-}
-
-nav {
-  margin: auto;
-  margin-right: 0;
-}
-nav ul {
-  display: flex;
-  margin: auto 0;
-  list-style: none;
-}
-nav ul li {
-  margin: 0 4px;
-}
-nav ul li a {
   text-decoration: none;
-  color: #ddd;
-  text-transform: capitalize;
-  font-size: 20px;
-  letter-spacing: 1px;
-  padding: 5px 10px;
-}
-nav ul li a:hover {
-  color: cornflowerblue;
-  font-size: 24px;
 }
 
-.search-box {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  margin-left: 800px;
-}
-
-.search-txt {
-  height: 40px;
-  width: 0px;
-  outline: none;
-  padding: 0 20px;
-  color: black;
-  font-size: 20px;
-  box-sizing: border-box;
-  border: 1px solid blue;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-}
-
-.search-icon {
-  width: 60px;
-  height: 60px;
-}
-.search-btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: blue;
-  line-height: 80px;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50%;
-}
-.search-btn img {
-  font-size: 25px;
-  line-height: 60px;
-}
-
-.search-box:hover .search-txt {
+.header-bar {
   width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 20%;
+}
+.search-box {
+  position: relative;
+  margin-right: 20px;
+  right: 20px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  height: 30px;
+  width: 60px;
+}
+.search-box.active {
+  width: 200px;
+}
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 0 60px 0 20px;
+  opacity: 0;
+}
+.search-box input.active {
+  opacity: 1;
+}
+.search-box .search-btn {
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  color: #664aff;
+  position: absolute;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  top: 50%;
+  right: 0px;
+}
+.search-box .cancel-btn{
+  position: absolute;
+  display: none;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.search-box .cancel-btn.active {
+  display: block;
+}
+.search-box .search-btn.active {
+  right: 5px;
+  height: 25px;
+  width: 25px;
+  color: #fff;
+  background-color: #664aff;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.search-and-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+}
+.header-nav-bar {
+  margin-right: 20px;
+}
+.nav-bar-list li {
+  display: inline;
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 992px) {

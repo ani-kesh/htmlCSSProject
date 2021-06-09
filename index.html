@@ -11,9 +11,7 @@
     <link rel="icon" href="pictures/icons/Flag_map_of_Armenia.svg.png" type="image/icon type">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-
-
-
+    <link rel="stylesheet" href="file:///C:/Users/ACER/Desktop/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="style/slide.css">
     <link rel="stylesheet" href="style/style.css">
 
@@ -23,25 +21,33 @@
     <h1 style="display:none;">Armenia</h1>
 
 
-    <header>
-        <div id='logo'>
+    <header class='header-bar'>
+        <div class='logo'>
             <a href='Home page'><img src="./pictures/logo.png" alt='Armenian flag' width="150" /></a>
         </div>
-        <div class='search-box'>
-            <input class='search-txt' type="search" placeholder="Search..." />
-            <a class='search-btn' href='#'>
-                <img class='search-icon' src="./pictures/icons/search-icon.png" alt='search icon'>
-            </a>
+        <nav class='search-and-nav'>
+          
+            <div class='header-nav-bar'>
+                <ul class='nav-bar-list'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>Regions</a></li>
+                    <li> <a href='#'>Tours</a></li>
+                    <li> <a href='#'>About us</a></li>
+                </ul>
+            </div>
+
+            <div class='search-box'>
+                <input  type="search" placeholder="Search..." />
+                <div class='search-btn'>
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class='cancel-btn'>
+                    <i class="fas fa-times"></i>
+                </div>
+
+            </nav>
 
         </div>
-        <nav>
-            <ul>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>Regions</a></li>
-                <li><a href='#'>Tours</a></li>
-                <li><a href='pages/about.html'>About us</a></li>
-            </ul>
-        </nav>
     </header>
 
     <div id="social-network">
@@ -78,8 +84,11 @@
     <footer>
         © Copyright 2021. Armenian Tour Company.
     </footer>
+   
 
     <script src="script/slide.js"></script>
+    <script src="script/app.js"></script>
+
 </body>
 
 </html>
