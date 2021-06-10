@@ -14,6 +14,8 @@
     <link rel="stylesheet" href='./fontawesome-free-5.15.3-web/css/all.css'>
     <link rel="stylesheet" href="style/slide.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/login.css">
+
 
 </head>
 
@@ -33,10 +35,14 @@
                     <li><a href='#'>Regions</a></li>
                     <li> <a href='#'>Tours</a></li>
                     <li> <a href='#'>About us</a></li>
+                    <li><a href='#' class='nav-bar-login'>Login</a></li>
                 </ul>
             </div>
 
-            <div class='search-box'>
+            
+
+        </nav>
+        <div class='search-box'>
                 <input  type="search" placeholder="Search..." />
                 <div class='search-btn'>
                     <i class="fas fa-search"></i>
@@ -45,10 +51,57 @@
                     <i class="fas fa-times"></i>
                 </div>
 
-            </nav>
-
         </div>
     </header>
+    <div class='wrapper'>
+        <div class='wrap-closing-icon'>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class='title-text'>
+            <div class='title login'>Login Form</div>
+            <div class='title signup'>Signup Form</div>
+        </div>
+        <div class='form-container'>
+            <div class="slide-controls">
+                <input type='radio' name='slider' id='login' checked>
+                <input type='radio' name='slider' id='signup'>
+                <label for="login" class='slide login'>Login</label>
+                <label for="signup" class='slide signup'>Signup</label>
+                <div class="slide-tab"></div>
+            </div>
+            <div class='form-inner'>
+                <form action="#" class='login'>
+                    <div class='field'>
+                        <input type='text' placeholder="Email Address" required tabindex="1">
+                    </div>
+                    <div class='field'>
+                        <input type='password' placeholder="Password" required tabindex="2">
+                    </div>
+                    <div class='pass-link'><a href="#">Forgot password?</a></div>
+                    <div class='field'>
+                        <input type='submit' value='Login' placeholder="3">
+                    </div>
+                    <div class='signup-link'>Not a member?<a href="#">Signup now</a></div>
+                </form>
+
+                <form action="#" class='signup'>
+                    <div class='field'>
+                        <input type='text' placeholder="Email Address" required tabindex="1">
+                    </div>
+                    <div class='field'>
+                        <input type='password' placeholder="Password" required tabindex="2">
+                    </div>
+                    <div class='field'>
+                        <input type='password' placeholder="Confirm password" required tabindex="3">
+                    </div>
+                    <div class='field'>
+                        <input type='submit' value='Signup'>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <div id="social-network">
         <ul class="social-network-icons">
@@ -88,6 +141,7 @@
 
     <script src="script/slide.js"></script>
     <script src="script/app.js"></script>
+    <script src='script/login.js'></script>
 
 </body>
 
