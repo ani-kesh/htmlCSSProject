@@ -1,0 +1,36 @@
+.cooperation-slideshow {
+  height: 200px;
+  max-width: 100%;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.cooperation-slideshow > div {
+  height: 200px;
+  width: 2526px;
+  background: url(../pictures/about/slideAbout.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+
+.cooperation-slideshow .mover-1 {
+  animation: aboutPageSlide 12s linear infinite;
+}
+
+.cooperation-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: aboutPageSlide 15s linear infinite;
+}
+
+@keyframes aboutPageSlide {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}

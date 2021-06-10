@@ -1,6 +1,11 @@
 .homeSlide {
   display: none;
 }
+
+.homeSlidePicture {
+  width: 100%;
+}
+
 img {
   vertical-align: middle;
 }
@@ -11,7 +16,7 @@ img {
   margin: auto;
 }
 
-.slideText {
+.slide-text {
   padding: 8px 12px;
   position: absolute;
   top: 20vh;
@@ -20,7 +25,7 @@ img {
   font-family: "Kaushan Script", cursive;
 }
 
-.slideText p {
+.slide-text p {
   font-size: 80px;
 }
 
@@ -54,8 +59,45 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 800px) {
   .text {
     font-size: 11px;
+  }
+
+  #armenia-text {
+    font-size: 90px;
+  }
+
+  .slide-text {
+    top: 30vh;
+  }
+
+  .slide-text p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slide-text {
+    top: 20vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .slide-text {
+    top: 22vh;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .slide-text {
+    top: 10vh;
+  }
+}
+@media only screen and (max-width: 290px) {
+  .slide-text {
+    top: 25vh;
+  }
+
+  #armenia-text {
+    font-size: 50px;
   }
 }
