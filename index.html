@@ -11,7 +11,7 @@
     <link rel="icon" href="pictures/icons/Flag_map_of_Armenia.svg.png" type="image/icon type">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="file:///C:/Users/ACER/Desktop/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href='./fontawesome-free-5.15.3-web/css/all.css'>
     <link rel="stylesheet" href="style/slide.css">
     <link rel="stylesheet" href="style/style.css">
 
@@ -23,31 +23,28 @@
 
     <header class='header-bar'>
         <div class='logo'>
-            <a href='Home page'><img src="./pictures/logo.png" alt='Armenian flag' width="150" /></a>
+            <a href='Home page'><img src="./pictures/logo.png" alt='Armenian flag' width="150" id="logo" /></a>
         </div>
         <nav class='search-and-nav'>
-          
+
             <div class='header-nav-bar'>
                 <ul class='nav-bar-list'>
                     <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Regions</a></li>
-                    <li> <a href='#'>Tours</a></li>
-                    <li> <a href='#'>About us</a></li>
+                    <li><a href='pages/regions.html'>Regions</a></li>
+                    <li> <a href='pages/tours.html'>Tours</a></li>
+                    <li> <a href='pages/about.html'>About us</a></li>
                 </ul>
             </div>
 
             <div class='search-box'>
-                <input  type="search" placeholder="Search..." />
+                <input type="search" placeholder="Search..." />
                 <div class='search-btn'>
                     <i class="fas fa-search"></i>
                 </div>
                 <div class='cancel-btn'>
                     <i class="fas fa-times"></i>
                 </div>
-
-            </nav>
-
-        </div>
+        </nav>
     </header>
 
     <div id="social-network">
@@ -60,23 +57,23 @@
 
     <div class="slideshow-container">
         <div class="homeSlide fade">
-            <img src="pictures/home/1.jpg" style="width:100%">
+            <img src="pictures/home/1.jpg" class="homeSlidePicture">
         </div>
         <div class="homeSlide fade">
-            <img src="pictures/home/2.jpg" style="width:100%">
+            <img src="pictures/home/2.jpg" class="homeSlidePicture">
         </div>
         <div class="homeSlide fade">
-            <img src="pictures/home/3.jpg" style="width:100%">
+            <img src="pictures/home/3.jpg" class="homeSlidePicture">
         </div>
         <div class="homeSlide fade">
-            <img src="pictures/home/4.jpg" style="width:100%">
+            <img src="pictures/home/4.jpg" class="homeSlidePicture">
         </div>
         <div class="homeSlide fade">
-            <img src="pictures/home/5.jpg" style="width:100%">
+            <img src="pictures/home/5.jpg" class="homeSlidePicture">
         </div>
     </div>
 
-    <div class="slideText">
+    <div class="slide-text">
         <span id="armenia-text">Armenia</span>
         <p>Our Land is amazing with stories!</p>
     </div>
@@ -84,7 +81,7 @@
     <footer>
         © Copyright 2021. Armenian Tour Company.
     </footer>
-   
+
 
     <script src="script/slide.js"></script>
     <script src="script/app.js"></script>
