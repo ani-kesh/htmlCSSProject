@@ -18,70 +18,63 @@
 </head>
 
 <body>
-    <h1 style="display:none;">Armenia</h1>
-
-
-    <header class='header-bar'>
-        <div class='logo'>
-            <a href='Home page'><img src="../pictures/logo.png" alt='Armenian flag' width="150" id="logo" /></a>
-        </div>
-        <nav class='search-and-nav'>
-
-            <div class='header-nav-bar'>
-                <ul class='nav-bar-list'>
-                    <li><a href='../index.html'>Home</a></li>
-                    <li><a href='#'>Regions</a></li>
-                    <li> <a href='./tours.html'>Tours</a></li>
-                    <li> <a href='./about.html'>About us</a></li>
-                </ul>
-            </div>
-
-            <div class='search-box'>
-                <input type="search" placeholder="Search..." />
-                <div class='search-btn'>
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class='cancel-btn'>
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-        </nav>
-
-    </header>
     <style>
-        .region-container {
-            position: fixed;
-            width: 100%;
-            height: 95vh;
-            background-color: gold;
+        input[type="checkbox"] {
+            position: absolute;
+            left: -9999px;
         }
 
-        .regons {
-            width: 100%;
-            height: 1000px;
-            background-color: hotpink;
-            position: relative;
-            top: 95vh;
+        input[type="checkbox"]~ul {
+            height: 0;
+            transform: scaleY(0);
+            background-color: red;
+
+        }
+
+        input[type="checkbox"]:checked~ul {
+            height: 100%;
+            transform-origin: top;
+            transition: transform .2s ease-out;
+            transform: scaleY(1);
         }
     </style>
-    <script>
-
-    </script>
-    <div class="region-container" id="region-container">
+    <div class="wrapper">
+        <ul>
+            <li>
+                <input type="checkbox" id="list-item-1">
+                <label for="list-item-1" class="first">Serif</label>
+                <ul>
+                    <li>Slabo</li>
+                    <li>Droid Serif</li>
+                    <li>Roboto Serif</li>
+                    <li>Lora</li>
+                    <li>Meriweather</li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="list-item-2">
+                <label for="list-item-2">Sans Serif</label>
+                <ul>
+                    <li>Open Sans</li>
+                    <li>Roboto</li>
+                    <li>Lato</li>
+                    <li>Stabo</li>
+                    <li>Oswald</li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="list-item-3">
+                <label for="list-item-3" class="last">Monospace</label>
+                <ul>
+                    <li>Inconsolata</li>
+                    <li>Source Code Pro</li>
+                    <li>Droid Sans Mono</li>
+                    <li>Ubuntu Mono</li>
+                    <li>Cousine</li>
+                </ul>
+            </li>
+        </ul>
     </div>
-    <div class="regons">
-
-    </div>
-
-
-
-
-
-
-    <!-- <footer>
-        © Copyright 2021. Armenian Tour Company.
-    </footer> -->
-
 
 </body>
 
