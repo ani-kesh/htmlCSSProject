@@ -1,21 +1,3 @@
-.homeSlide {
-  display: none;
-}
-
-.homeSlidePicture {
-  width: 100%;
-}
-
-img {
-  vertical-align: middle;
-}
-
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
 .slide-text {
   padding: 8px 12px;
   position: absolute;
@@ -23,6 +5,7 @@ img {
   width: 100%;
   text-align: center;
   font-family: "Kaushan Script", cursive;
+  color: white;
 }
 
 .slide-text p {
@@ -33,32 +16,6 @@ img {
   font-size: 140px;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 800px) {
   .text {
     font-size: 11px;
@@ -99,5 +56,82 @@ img {
 
   #armenia-text {
     font-size: 50px;
+  }
+}
+
+.slide-container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 800px;
+}
+
+.home-carousel-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+}
+.home-carousel-item {
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.home-carousel-item:nth-child(1) {
+  background-image: url("../pictures/home/1.jpg");
+  transform: rotateY(0deg) translateZ(430px);
+}
+.home-carousel-item:nth-child(2) {
+  background-image: url("../pictures/home/2.jpg");
+  transform: rotateY(40deg) translateZ(430px);
+}
+.home-carousel-item:nth-child(3) {
+  background-image: url("../pictures/home/3.jpg");
+  transform: rotateY(80deg) translateZ(430px);
+}
+.home-carousel-item:nth-child(4) {
+  background-image: url("../pictures/home/4.jpg");
+  transform: rotateY(120deg) translateZ(430px);
+}
+.home-carousel-item:nth-child(5) {
+  background-image: url("../pictures/home/5.jpg");
+  transform: rotateY(160deg) translateZ(430px);
+}
+.home-carousel-item:nth-child(6) {
+  background-image: url("../pictures/home/1.jpg");
+  transform: rotateY(200deg) translateZ(430px);
+}
+.home-carousel-item:nth-child(7) {
+  background-image: url("../pictures/home/2.jpg");
+  transform: rotateY(240deg) translateZ(430px);
+}
+.home-carousel-item:nth-child(8) {
+  background-image: url("../pictures/home/3.jpg");
+  transform: rotateY(280deg) translateZ(430px);
+}
+.home-carousel-item:nth-child(9) {
+  background-image: url("../pictures/home/4.jpg");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+.home-carousel-item:nth-child(10) {
+  background-image: url("../pictures/home/5.jpg");
+  transform: rotateY(360deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
   }
 }
