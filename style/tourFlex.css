@@ -19,6 +19,7 @@
 
 .tours-flex-item:hover {
   box-shadow: 14px 14px 16px black;
+  cursor: pointer;
 }
 .tour-title {
   padding: 15px 0px;
