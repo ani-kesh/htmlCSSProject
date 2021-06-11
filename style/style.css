@@ -17,6 +17,7 @@
   background-color: black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .search-box {
   position: relative;
@@ -103,22 +104,20 @@
   font-size: 18px;
 }
 @media screen and (max-width: 992px) {
-  header {
+  .header-bar {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    display: block;
+    align-content: center;
   }
-  .search-box {
-    flex-direction: row;
+  .search-and-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
   }
-  nav ul {
-    display: block;
-  }
-  nav {
-    margin: auto 0;
-  }
-  nav ul li a {
-    padding: 20px 20px;
+  .nav-bar-list li {
+    display: flex;
+    justify-content: column;
   }
 }
 
