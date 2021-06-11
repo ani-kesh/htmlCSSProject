@@ -1,0 +1,27 @@
+html body {
+  background-color: #fff !important;
+}
+
+.cities-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.city {
+  width: 310px;
+  margin: 20px;
+  text-align: center;
+  padding-top: 10px;
+  box-shadow: 5px 5px 12px black;
+  transition: box-shadow 0.9s 0s ease;
+}
+
+.city:hover {
+  box-shadow: 14px 14px 16px black;
+}
+.city a {
+  padding: 15px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
