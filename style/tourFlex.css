@@ -14,8 +14,12 @@
   text-align: center;
   padding-top: 10px;
   box-shadow: 5px 5px 12px black;
+  transition: box-shadow 0.9s 0s ease;
 }
 
+.tours-flex-item:hover {
+  box-shadow: 14px 14px 16px black;
+}
 .tour-title {
   padding: 15px 0px;
   font-size: 20px;
