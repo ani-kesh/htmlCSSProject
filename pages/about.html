@@ -13,8 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='../fontawesome-free-5.15.3-web/css/all.css'>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/slideAbout.css">
+    <link rel="stylesheet" href="../style/aboutPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 
@@ -23,34 +22,33 @@
 
     <header class='header-bar'>
         <div class='logo'>
-            <a href='Home page'><img src="../pictures/logo.png" alt='Armenian flag' width="150" id="logo" /></a>
+            <a href='../index.html'><img src="../pictures/logo.png" alt='Armenian flag' width="150" id="logo" /></a>
         </div>
-        <nav class='search-and-nav'>
+        <nav class='nav-bar'>
 
             <div class='header-nav-bar'>
                 <ul class='nav-bar-list'>
                     <li><a href='../index.html'>Home</a></li>
-                    <li><a href='./regions.html'>Regions</a></li>
-                    <li> <a href='./tours.html'>Tours</a></li>
-                    <li> <a href='#'>About us</a></li>
+                    <li><a href='../pages/cities.html'>Cities</a></li>
+                    <li> <a href='../pages/tours.html'>Tours</a></li>
+                    <li> <a href='../pages/about.html'>About us</a></li>
+                    <li><a href='#' class='nav-bar-login'>Login</a></li>
                 </ul>
             </div>
 
-            <div class='search-box'>
-                <input type="search" placeholder="Search..." />
-                <div class='search-btn'>
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class='cancel-btn'>
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-            </div>
+
 
         </nav>
 
-    </header>
 
+        <div class='search-box'>
+            <input type="search" placeholder="Search..." />
+            <div class='search-btn'>
+                <i class="fas fa-search"></i>
+            </div>
+
+        </div>
+    </header>
 
     <section class="about-grid-container">
         <div class="about-grid-item">
@@ -76,8 +74,11 @@
 
         <div class="cooperation-slideshow">
             <div class="mover-1"></div>
-            <div class="mover-2"></div>
         </div>
+
+
+
+
     </section>
 
     <section class="team-container">
@@ -89,16 +90,16 @@
                 <img src="../pictures/team/001.jpg" width="140" class="workers" />
                 <span class="worker-name">Ani Keshishyan</span>
                 <div class="soc-side">
-                    <img src="../pictures/icons/facebook-icon.png" width="40" class="soc-pic" onclick="alert(1)" />
-                    <img src="../pictures/icons/linkedin-icon.png" width="40" class="soc-pic" onclick="alert(1)" />
+                    <img src="../pictures/icons/facebook-icon.png" width="40" class="soc-pic" />
+                    <img src="../pictures/icons/linkedin-icon.png" width="40" class="soc-pic" />
                 </div>
             </div>
             <div class="team-card">
                 <img src="../pictures/team/002.jpg" width="140" class="workers" />
                 <span class="worker-name">Tigran Khanaghyan</span>
                 <div class="soc-side">
-                    <img src="../pictures/icons/facebook-icon.png" width="40" class="soc-pic" onclick="alert(1)" />
-                    <img src="../pictures/icons/linkedin-icon.png" width="40" class="soc-pic" onclick="alert(1)" />
+                    <img src="../pictures/icons/facebook-icon.png" width="40" class="soc-pic" />
+                    <img src="../pictures/icons/linkedin-icon.png" width="40" class="soc-pic" />
                 </div>
             </div>
         </div>
@@ -108,7 +109,15 @@
     <footer>
         © Copyright 2021. Armenian Tour Company.
     </footer>
-    <script src="../script/app.js"></script>
+
+
+    <div id="social-network">
+        <ul class="social-network-icons">
+            <li><img src="../pictures/icons/facebook.png" width="30" /></li>
+            <li><img src="../pictures/icons/twitter.png" width="30" /></li>
+            <li><img src="../pictures/icons/linkedin.png" width="30" /></li>
+        </ul>
+    </div>
 </body>
 
 </html>

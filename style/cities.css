@@ -1,14 +1,14 @@
-.tours-flex-container {
+html body {
+  background-color: #fff !important;
+}
+
+.cities-box {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: flex-start;
-  align-content: stretch;
   padding: 50px;
 }
 
-.tours-flex-item {
+.city {
   width: 310px;
   margin: 20px;
   text-align: center;
@@ -17,16 +17,11 @@
   transition: box-shadow 0.9s 0s ease;
 }
 
-.tours-flex-item:hover {
+.city:hover {
   box-shadow: 14px 14px 16px black;
-  cursor: pointer;
 }
-.tour-title {
+.city a {
   padding: 15px 0px;
   font-size: 20px;
   font-weight: bold;
 }
-
-/* .tours-flex-item:active ~ #modal-days {
-  display: block;
-} */

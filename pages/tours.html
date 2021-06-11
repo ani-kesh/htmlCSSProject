@@ -9,12 +9,10 @@
     <meta name="author" content="Ani Keshishyan,Tigran Khanaghyan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../pictures/icons/Flag_map_of_Armenia.svg.png" type="image/icon type">
+    <link rel="stylesheet" href='../fontawesome-free-5.15.3-web/css/all.css'>
+    <link rel="stylesheet" href="../style/tours.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href='../fontawesome-free-5.15.3-web/css/all.css'>
-    <link rel="stylesheet" href="../style/slide.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/tourFlex.css">
 
 </head>
 
@@ -23,29 +21,40 @@
 
     <header class='header-bar'>
         <div class='logo'>
-            <a href='Home page'><img src="../pictures/logo.png" alt='Armenian flag' width="150" id="logo" /></a>
+            <a href='../index.html'><img src="../pictures/logo.png" alt='Armenian flag' width="150" id="logo" /></a>
         </div>
-        <nav class='search-and-nav'>
+        <nav class='nav-bar'>
+
             <div class='header-nav-bar'>
                 <ul class='nav-bar-list'>
                     <li><a href='../index.html'>Home</a></li>
-                    <li><a href='./regions.html'>Regions</a></li>
-                    <li> <a href='#'>Tours</a></li>
-                    <li> <a href='./about.html'>About us</a></li>
+                    <li><a href='../pages/cities.html'>Cities</a></li>
+                    <li> <a href='../pages/tours.html'>Tours</a></li>
+                    <li> <a href='../pages/about.html'>About us</a></li>
+                    <li><a href='#' class='nav-bar-login'>Login</a></li>
                 </ul>
             </div>
-            <div class='search-box'>
-                <input type="search" placeholder="Search..." />
-                <div class='search-btn'>
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class='cancel-btn'>
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
 
+
+
+        </nav>
+
+
+        <div class='search-box'>
+            <input type="search" placeholder="Search..." />
+            <div class='search-btn'>
+                <i class="fas fa-search"></i>
+            </div>
+
+        </div>
+    </header>
+    <div id="social-network">
+        <ul class="social-network-icons">
+            <li><img src="../pictures/icons/facebook.png" width="30" /></li>
+            <li><img src="../pictures/icons/twitter.png" width="30" /></li>
+            <li><img src="../pictures/icons/linkedin.png" width="30" /></li>
+        </ul>
+    </div>
     <div class="tours-container">
         <div class="tours-flex-container">
             <div class="tours-flex-item">
@@ -54,6 +63,7 @@
                     Welcome To Noah's Land
                 </p>
             </div>
+
             <div class="tours-flex-item">
                 <img src="../pictures/tours/2.png" width="280" />
                 <p class="tour-title">
@@ -108,14 +118,51 @@
                     Highlights of Armenia
                 </p>
             </div>
+
+            <!-- <div id="modal-days" class="modal-days">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <br />
+                        <br />
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="day-title">Day 1</h4>
+                        <p class="day-description">Arrival in Armenia.</p>
+                        <h4 class="day-title">Day 2</h4>
+                        <p class="day-description">Yerevan City Tour. Amberd fortress.</p>
+                        <h4 class="day-title">Day 3</h4>
+                        <p class="day-description">Trip to the South: Khor Virap – Areni village – Noravank – Goris.</p>
+                        <h4 class="day-title">Day 4</h4>
+                        <p class="day-description">Overnight in Goris.Exploring the South: Tatev monastery – Khndzoresk
+                            Cave
+                            Town.</p>
+                        <h4 class="day-title">Day 5</h4>
+                        <p class="day-description">Karahunge – Selim caravanserai – Noratus field of cross-stones– Lake
+                            Sevan.
+                        </p>
+                        <h4 class="day-title">Day 6</h4>
+                        <p class="day-description">Trip to the North: Dilijan resort – Goshavank monastery – Dzoraget
+                        </p>
+                        <h4 class="day-title">Day 7</h4>
+                        <p class="day-description">Haghpat monastery – Ohanavank monastery – Yerevan.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="modal-button" value="Back" />
+                        <input type="button" class="modal-button" value="Book Now" onclick="openBookPage()" />
+                    </div>
+                </div>
+
+            </div> -->
         </div>
     </div>
 
 
 
-    <!-- <footer>
+    <footer>
         © Copyright 2021. Armenian Tour Company.
-    </footer> -->
+    </footer>
+
 
 
 </body>
