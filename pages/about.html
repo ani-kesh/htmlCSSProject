@@ -20,35 +20,31 @@
 <body>
     <h1 style="display:none;">Armenia</h1>
 
-    <header class='header-bar'>
-        <div class='logo'>
-            <a href='../index.html'><img src="../pictures/logo.png" alt='Armenian flag' width="150" id="logo" /></a>
-        </div>
-        <nav class='nav-bar'>
-
-            <div class='header-nav-bar'>
-                <ul class='nav-bar-list'>
-                    <li><a href='../index.html'>Home</a></li>
-                    <li><a href='../pages/cities.html'>Cities</a></li>
-                    <li> <a href='../pages/tours.html'>Tours</a></li>
-                    <li> <a href='../pages/about.html'>About us</a></li>
-                    <li><a href='#' class='nav-bar-login'>Login</a></li>
-                </ul>
+    <header class="header-bar">
+        <nav>
+            <input type="checkbox" id='show-search'>
+            <input type="checkbox" id='show-menu'>
+            <label for='show-menu' class="menu-icon"><i class="fas fa-bars"></i></label> 
+            <div class="content">
+                <div class="logo">
+                    <a href="#"><img src="../pictures/logo.png" alt="Armenian Flag" width='150' id='logo'></a>
+                </div>
+                    <ul class="links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/cities.html">Cities</a></li>
+                        <li><a href="../pages/tours.html">Tours</a></li>
+                        <li><a href="../pages/about.html">About us</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
             </div>
-
-
-
+           <label for='show-search' class="search-icon"><i class="fas fa-search"></i></label> 
+           <form action="#" class='search-box'>
+               <input type="text" placeholder="Type Something to Search..." required>
+               <button type="submit" class='go-icon'><i class="fas fa-long-arrow-alt-right"></i></button>
+           </form>
         </nav>
-
-
-        <div class='search-box'>
-            <input type="search" placeholder="Search..." />
-            <div class='search-btn'>
-                <i class="fas fa-search"></i>
-            </div>
-
-        </div>
     </header>
+
 
     <main class="about-container">
         <div class="flex-container-about">
@@ -80,19 +76,25 @@
                 <br />
                 <div class="team-card-container">
                     <div class="team-card">
-                        <img src="../pictures/team/001.jpg" width="140" class="workers" />
+                        <img src="../pictures/team/001.jpg" width="140" class="workers"
+                            alt="team worker Ani Keshishyan" />
                         <span class="worker-name">Ani Keshishyan</span>
                         <div class="soc-side">
-                            <img src="../pictures/icons/facebook-icon.png" width="40" class="soc-pic" />
-                            <img src="../pictures/icons/linkedin-icon.png" width="40" class="soc-pic" />
+                            <img src="../pictures/icons/facebook-icon.png" width="40" class="soc-pic"
+                                alt="link to Ani facebook page" />
+                            <img src="../pictures/icons/linkedin-icon.png" width="40" class="soc-pic"
+                                alt="link to Ani linkedin page" />
                         </div>
                     </div>
                     <div class="team-card">
-                        <img src="../pictures/team/002.jpg" width="140" class="workers" />
+                        <img src="../pictures/team/002.jpg" width="140" class="workers"
+                            alt="team worker Tigran Khanaghyan" />
                         <span class="worker-name">Tigran Khanaghyan</span>
                         <div class="soc-side">
-                            <img src="../pictures/icons/facebook-icon.png" width="40" class="soc-pic" />
-                            <img src="../pictures/icons/linkedin-icon.png" width="40" class="soc-pic" />
+                            <img src="../pictures/icons/facebook-icon.png" width="40" class="soc-pic"
+                                alt="link to Tigran facebook page" />
+                            <img src="../pictures/icons/linkedin-icon.png" width="40" class="soc-pic"
+                                alt="link to Tigran linkedin page" />
                         </div>
                     </div>
                 </div>
@@ -107,9 +109,9 @@
 
     <div id="social-network">
         <ul class="social-network-icons">
-            <li><img src="../pictures/icons/facebook.png" width="30" /></li>
-            <li><img src="../pictures/icons/twitter.png" width="30" /></li>
-            <li><img src="../pictures/icons/linkedin.png" width="30" /></li>
+            <li><img src="../pictures/icons/facebook.png" width="30" alt="facebook icon" /></li>
+            <li><img src="../pictures/icons/twitter.png" width="30" alt="twitter icon" /></li>
+            <li><img src="../pictures/icons/linkedin.png" width="30" alt="linkedin icon" /></li>
         </ul>
     </div>
 </body>
