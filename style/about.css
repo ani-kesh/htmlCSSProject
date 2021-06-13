@@ -1,0 +1,131 @@
+@import url(logo.css);
+@import url(main.css);
+@import url(header.css);
+@import url(navSocialNetwork.css);
+@import url(slideAbout.css);
+@import url(styleAbout.css);
+@import url(footer.css);
+
+.about-container {
+  background-color: black;
+  padding-top: 20px;
+}
+.flex-container-about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: stretch;
+  padding: 50px;
+}
+
+.flex-container-item {
+  padding-top: 10px;
+  transition: box-shadow 0.9s 0s ease;
+  color: white;
+}
+.flex-container-item:nth-child(1),
+.flex-container-item:nth-child(2) {
+  height: 100vh;
+  width: 50%;
+  background-color: black;
+}
+
+.flex-container-item:nth-child(3),
+.flex-container-item:nth-child(4) {
+  width: 100%;
+  color: black;
+  background-color: white;
+}
+
+.flex-container-item:nth-child(2) {
+  background-color: black;
+  background: url(../pictures/about/nur.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-title-section {
+  font-size: 70px;
+  font-family: "Kaushan Script", cursive;
+}
+
+#about-company {
+  margin: 30px auto auto 0px;
+  font-size: 24px;
+  text-align: justify;
+}
+
+/* team container start  */
+.team-card-container {
+  padding-left: 50px;
+}
+.team-container {
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.team-card {
+  position: relative;
+  width: 160px;
+  display: inline-block;
+}
+
+.soc-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 0px;
+  background-color: dodgerblue;
+  transition: height 1s;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.workers:hover ~ .soc-side,
+.soc-side:hover {
+  height: 140px;
+}
+
+.soc-pic {
+  margin-top: 40%;
+  display: none;
+}
+
+.workers:hover .soc-pic,
+.soc-side:hover .soc-pic {
+  display: inline;
+  cursor: pointer;
+}
+
+.worker-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #57585b;
+}
+/* team container end  */
+
+#cooperation-container {
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .flex-container-item:nth-child(1),
+  .flex-container-item:nth-child(2) {
+    width: 100%;
+  }
+  .flex-container-item:nth-child(1) {
+    height: auto;
+  }
+  .flex-container-item:nth-child(2) {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-title-section {
+    font-size: 40px;
+  }
+}
