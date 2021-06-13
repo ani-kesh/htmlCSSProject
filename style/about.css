@@ -17,6 +17,7 @@
   align-items: stretch;
   justify-content: space-between;
   align-content: stretch;
+  padding: 50px;
 }
 
 .flex-container-item {
