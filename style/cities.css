@@ -4,8 +4,8 @@ html body {
 
 .cities-box {
   display: flex;
-  flex-wrap: wrap;
-  padding: 50px;
+  flex-wrap: wrap;  
+  padding: 70px 50px 50px 50px;
 }
 
 .city {
