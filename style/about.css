@@ -6,6 +6,9 @@
 @import url(styleAbout.css);
 @import url(footer.css);
 
+body {
+  background-color: black;
+}
 .about-container {
   background-color: black;
   padding-top: 20px;
@@ -17,7 +20,7 @@
   align-items: stretch;
   justify-content: space-between;
   align-content: stretch;
-  padding: 50px;
+  padding-top: 70px;
 }
 
 .flex-container-item {
@@ -47,14 +50,17 @@
 }
 
 .about-title-section {
+  width: 100%;
   font-size: 70px;
   font-family: "Kaushan Script", cursive;
+  margin-left: 50px;
 }
 
 #about-company {
   margin: 30px auto auto 0px;
   font-size: 24px;
   text-align: justify;
+  padding: 0px 20px;
 }
 
 /* team container start  */
@@ -127,5 +133,7 @@
 @media only screen and (max-width: 768px) {
   .about-title-section {
     font-size: 40px;
+    text-align: center;
+    margin-left: 2px;
   }
 }
