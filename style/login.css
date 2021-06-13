@@ -59,3 +59,9 @@ form .field input[type="submit"] {
   border: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 410px){
+  .login-bar {
+    width: 100%;
+  }
+}
