@@ -6,13 +6,9 @@
 @import url(slide.css);
 @import url(login.css);
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+body {
+  background-color: black;
 }
-
 .container {
   min-height: 100vh;
   overflow-x: hidden;
