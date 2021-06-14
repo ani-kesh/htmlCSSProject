@@ -8,7 +8,14 @@
     <meta name="keywords" content="Armenia, tour, tourism, booking, travel">
     <meta name="author" content="Ani Keshishyan,Tigran Khanaghyan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="pictures/icons/Flag_map_of_Armenia.svg.png" type="image/icon type">
+
+    <meta property="og:url" content="https://ani-kesh.github.io/htmlCSSProject/" />
+    <meta property="og:type" content="tourism" />
+    <meta property="og:title" content="Armenian Tour Company" />
+    <meta property="og:description" content="Best Company :D" />
+    <meta property="og:image" content="../../pictures/share/armenia.jpg" />
+
+    <link rel="icon" href="../../pictures/icons/Flag_map_of_Armenia.svg.png" type="image/icon type">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='../../fontawesome-free-5.15.3-web/css/all.css'>
@@ -19,40 +26,39 @@
 
 
 
+
 </head>
 
-<body style="background-color: black;">
-    <h1 style="display:none;">Armenia</h1>
+
+<body>
+    <h1>Armenia</h1>
 
 
-    <header class='header-bar'>
-        <div class='logo'>
-            <a href='Home page'><img src="../../pictures/logo.png" alt='Armenian flag' width="150" id="logo" /></a>
-        </div>
-        <nav class='nav-bar'>
+    <header class="header-bar">
+        <nav>
+            <input type="checkbox" id='show-search'>
+            <input type="checkbox" id='show-menu'>
+            <label for='show-menu' class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo">
+                    <a href="#"><img src="../../pictures/logo.png" alt="Armenian Flag" width='150' id='logo'></a>
+                </div>
+                <ul class="links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../pages/cities.html">Cities</a></li>
+                    <li><a href="../../pages/tours.html">Tours</a></li>
+                    <li><a href="../../pages/about.html">About us</a></li>
+                    <li><a href="#">Login</a></li>
 
-            <div class='header-nav-bar'>
-                <ul class='nav-bar-list'>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='../../pages/cities.html'>Cities</a></li>
-                    <li> <a href='../../pages/tours.html'>Tours</a></li>
-                    <li> <a href='../../pages/about.html'>About us</a></li>
-                    <li><a href='#' class='nav-bar-login'>Login</a></li>
                 </ul>
             </div>
-
-
-
+            <label for='show-search' class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class='search-box'>
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class='go-icon'><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
         </nav>
 
-
-        <div class='search-box'>
-            <input type="search" placeholder="Search..." />
-            <div class='search-btn'>
-                <i class="fas fa-search"></i>
-            </div>
-
-        </div>
     </header>
 
     <main class='container'>
@@ -73,9 +79,10 @@
 
     <div id="social-network">
         <ul class="social-network-icons">
-            <li><img src="../../pictures/icons/facebook.png" width="30" /></li>
-            <li><img src="../../pictures/icons/twitter.png" width="30" /></li>
-            <li><img src="../../pictures/icons/linkedin.png" width="30" /></li>
+
+            <li><img src="../../pictures/icons/facebook.png" width="30" alt="facebook icon" /></li>
+            <li><img src="../../pictures/icons/twitter.png" width="30" alt="twitter icon" /></li>
+            <li><img src="../../pictures/icons/linkedin.png" width="30" alt="linkedin icon" /></li>
         </ul>
     </div>
 

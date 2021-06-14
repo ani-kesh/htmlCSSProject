@@ -3,104 +3,65 @@
 
 <head>
     <title>ArmTours</title>
+
     <meta charset="UTF-8">
     <meta name="description" content="Armenian best tour company">
     <meta name="keywords" content="Armenia, tour, tourism, booking, travel">
     <meta name="author" content="Ani Keshishyan,Tigran Khanaghyan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--facebook sharing start-->
+    <meta property="og:url" content="https://ani-kesh.github.io/htmlCSSProject/" />
+    <meta property="og:type" content="tourism" />
+    <meta property="og:title" content="Armenian Tour Company" />
+    <meta property="og:description" content="Best Company :D" />
+    <meta property="og:image" content="pictures/share/armenia.jpg" />
+    <!--facebook sharing end-->
+
+    <!-- <meta name="twitter:title" content="Armenian Tour Company">
+    <meta name="twitter:description" content="Best Company :D">
+    <meta name="twitter:image" content="pictures/share/armenia-twitter.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@website-username"> -->
+
+    <!-- styles start -->
     <link rel="icon" href="pictures/icons/Flag_map_of_Armenia.svg.png" type="image/icon type">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='./fontawesome-free-5.15.3-web/css/all.css'>
-    <link rel="stylesheet" href="style/slide.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/login.css">
 
+    <!-- styles end -->
 
 </head>
 
-<body style="background-color: black;">
-    <h1 style="display:none;">Armenia</h1>
-
-
-    <header class='header-bar'>
-        <div class='logo'>
-            <a href='Home page'><img src="./pictures/logo.png" alt='Armenian flag' width="150" id="logo" /></a>
-        </div>
-        <nav class='nav-bar'>
-
-            <div class='header-nav-bar'>
-                <ul class='nav-bar-list'>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='pages/cities.html'>Cities</a></li>
-                    <li> <a href='pages/tours.html'>Tours</a></li>
-                    <li> <a href='pages/about.html'>About us</a></li>
-                    <li><a href='#' class='nav-bar-login'>Login</a></li>
+<body>
+    <h1>Armenia</h1>
+    <header class="header-bar">
+        <nav>
+            <input type="checkbox" id='show-search'>
+            <input type="checkbox" id='show-menu'>
+            <label for='show-menu' class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo">
+                    <a href="#"><img src="pictures/logo.png" alt="Armenian Flag" width='150' id='logo'></a>
+                </div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/cities.html">Cities</a></li>
+                    <li><a href="pages/tours.html">Tours</a></li>
+                    <li><a href="pages/about.html">About us</a></li>
+                    <li><a href="pages/login.html">Login</a></li>
                 </ul>
             </div>
-
-
-
+            <label for='show-search' class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class='search-box'>
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class='go-icon'><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
         </nav>
 
-
-        <div class='search-box'>
-            <input type="search" placeholder="Search..." />
-            <div class='search-btn'>
-                <i class="fas fa-search"></i>
-            </div>
-
-        </div>
     </header>
-    <div class='wrapper'>
-        <div class='wrap-closing-icon'>
-            <i class="fas fa-times"></i>
-        </div>
-        <div class='title-text'>
-            <div class='title login'>Login Form</div>
-            <div class='title signup'>Signup Form</div>
-        </div>
-        <div class='form-container'>
-            <div class="slide-controls">
-                <input type='radio' name='slider' id='login' checked>
-                <input type='radio' name='slider' id='signup'>
-                <label for="login" class='slide login'>Login</label>
-                <label for="signup" class='slide signup'>Signup</label>
-                <div class="slide-tab"></div>
-            </div>
-            <div class='form-inner'>
-                <form action="#" class='login'>
-                    <div class='field'>
-                        <input type='text' placeholder="Email Address" required tabindex="1">
-                    </div>
-                    <div class='field'>
-                        <input type='password' placeholder="Password" required tabindex="2">
-                    </div>
-                    <div class='pass-link'><a href="#">Forgot password?</a></div>
-                    <div class='field'>
-                        <input type='submit' value='Login' placeholder="3">
-                    </div>
-                    <div class='signup-link'>Not a member?<a href="#">Signup now</a></div>
-                </form>
-
-                <form action="#" class='signup'>
-                    <div class='field'>
-                        <input type='text' placeholder="Email Address" required tabindex="1">
-                    </div>
-                    <div class='field'>
-                        <input type='password' placeholder="Password" required tabindex="2">
-                    </div>
-                    <div class='field'>
-                        <input type='password' placeholder="Confirm password" required tabindex="3">
-                    </div>
-                    <div class='field'>
-                        <input type='submit' value='Signup'>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
 
     <main class="container">
         <div class="slide-container">
@@ -129,9 +90,9 @@
 
     <div id="social-network">
         <ul class="social-network-icons">
-            <li><img src="pictures/icons/facebook.png" width="30" /></li>
-            <li><img src="pictures/icons/twitter.png" width="30" /></li>
-            <li><img src="pictures/icons/linkedin.png" width="30" /></li>
+            <li><img src="pictures/icons/facebook.png" width="30" alt="facebook icon" /></li>
+            <li><img src="pictures/icons/twitter.png" width="30" alt="twitter icon" /></li>
+            <li><img src="pictures/icons/linkedin.png" width="30" alt="linkedin icon" /></li>
         </ul>
     </div>
 

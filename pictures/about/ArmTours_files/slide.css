@@ -6,7 +6,6 @@
   text-align: center;
   font-family: "Kaushan Script", cursive;
   color: white;
-  overflow: hidden;
 }
 
 .slide-text p {
@@ -36,8 +35,8 @@
   width: 300px;
   height: 187px;
   top: 20px;
-  left: 20px;
-  right: 20px;
+  left: 10px;
+  right: 10px;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -97,48 +96,51 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .slide-container {
-    margin-top: 160px;
+    margin-top: 40px;
     width: 180px;
   }
 
   .home-carousel-item {
     width: 135px;
-    height: 120px;
+    height: 110px;
   }
   .home-carousel-item:nth-child(1) {
-    transform: rotateY(0deg) translateZ(210px);
+    transform: rotateY(0deg) translateZ(190px);
   }
   .home-carousel-item:nth-child(2) {
-    transform: rotateY(40deg) translateZ(210px);
+    transform: rotateY(40deg) translateZ(190px);
   }
   .home-carousel-item:nth-child(3) {
-    transform: rotateY(80deg) translateZ(210px);
+    transform: rotateY(80deg) translateZ(190px);
   }
   .home-carousel-item:nth-child(4) {
-    transform: rotateY(120deg) translateZ(210px);
+    transform: rotateY(120deg) translateZ(190px);
   }
   .home-carousel-item:nth-child(5) {
-    transform: rotateY(160deg) translateZ(210px);
+    transform: rotateY(160deg) translateZ(190px);
   }
   .home-carousel-item:nth-child(6) {
-    transform: rotateY(200deg) translateZ(210px);
+    transform: rotateY(200deg) translateZ(190px);
   }
   .home-carousel-item:nth-child(7) {
-    transform: rotateY(240deg) translateZ(210px);
+    transform: rotateY(240deg) translateZ(190px);
   }
   .home-carousel-item:nth-child(8) {
-    transform: rotateY(280deg) translateZ(210px);
+    transform: rotateY(280deg) translateZ(190px);
   }
   .home-carousel-item:nth-child(9) {
-    transform: rotateY(320deg) translateZ(210px);
+    transform: rotateY(320deg) translateZ(190px);
   }
 
   .home-carousel-item:nth-child(10) {
-    transform: rotateY(360deg) translateZ(210px);
+    transform: rotateY(360deg) translateZ(190px);
+  }
+  .slide-text {
+    top: 35vh;
   }
 
   #armenia-text {
-    font-size: 60px;
+    font-size: 80px;
   }
 
   .slide-text p {
@@ -149,44 +151,46 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
   .slide-container {
-    margin-top: 170px;
-    width: 240px;
+    width: 280px;
   }
 
   .home-carousel-item {
-    width: 190px;
-    height: 140px;
+    width: 200px;
+    height: 150px;
   }
   .home-carousel-item:nth-child(1) {
-    transform: rotateY(0deg) translateZ(270px);
+    transform: rotateY(0deg) translateZ(290px);
   }
   .home-carousel-item:nth-child(2) {
-    transform: rotateY(40deg) translateZ(270px);
+    transform: rotateY(40deg) translateZ(290px);
   }
   .home-carousel-item:nth-child(3) {
-    transform: rotateY(80deg) translateZ(270px);
+    transform: rotateY(80deg) translateZ(290px);
   }
   .home-carousel-item:nth-child(4) {
-    transform: rotateY(120deg) translateZ(270px);
+    transform: rotateY(120deg) translateZ(290px);
   }
   .home-carousel-item:nth-child(5) {
-    transform: rotateY(160deg) translateZ(270px);
+    transform: rotateY(160deg) translateZ(290px);
   }
   .home-carousel-item:nth-child(6) {
-    transform: rotateY(200deg) translateZ(270px);
+    transform: rotateY(200deg) translateZ(290px);
   }
   .home-carousel-item:nth-child(7) {
-    transform: rotateY(240deg) translateZ(270px);
+    transform: rotateY(240deg) translateZ(290px);
   }
   .home-carousel-item:nth-child(8) {
-    transform: rotateY(280deg) translateZ(270px);
+    transform: rotateY(280deg) translateZ(290px);
   }
   .home-carousel-item:nth-child(9) {
-    transform: rotateY(320deg) translateZ(270px);
+    transform: rotateY(320deg) translateZ(290px);
   }
 
   .home-carousel-item:nth-child(10) {
-    transform: rotateY(360deg) translateZ(270px);
+    transform: rotateY(360deg) translateZ(290px);
+  }
+  .slide-text {
+    top: 45vh;
   }
 
   #armenia-text {
@@ -201,50 +205,50 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 850px) {
   .slide-container {
-    width: 290px;
+    width: 320px;
   }
 
   .home-carousel-item {
-    width: 260px;
+    width: 300px;
     height: 150px;
   }
   .home-carousel-item:nth-child(1) {
-    transform: rotateY(0deg) translateZ(370px);
+    transform: rotateY(0deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(2) {
-    transform: rotateY(40deg) translateZ(370px);
+    transform: rotateY(40deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(3) {
-    transform: rotateY(80deg) translateZ(370px);
+    transform: rotateY(80deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(4) {
-    transform: rotateY(120deg) translateZ(370px);
+    transform: rotateY(120deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(5) {
-    transform: rotateY(160deg) translateZ(370px);
+    transform: rotateY(160deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(6) {
-    transform: rotateY(200deg) translateZ(370px);
+    transform: rotateY(200deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(7) {
-    transform: rotateY(240deg) translateZ(370px);
+    transform: rotateY(240deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(8) {
-    transform: rotateY(280deg) translateZ(370px);
+    transform: rotateY(280deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(9) {
-    transform: rotateY(320deg) translateZ(370px);
+    transform: rotateY(320deg) translateZ(430px);
   }
 
   .home-carousel-item:nth-child(10) {
-    transform: rotateY(360deg) translateZ(370px);
+    transform: rotateY(360deg) translateZ(430px);
   }
   .slide-text {
-    top: 25vh;
+    top: 50vh;
   }
 
   .slide-container {
-    margin-top: 180px;
+    margin-top: 100px;
   }
 
   #armenia-text {
@@ -257,9 +261,10 @@
 }
 
 @media only screen and (min-width: 980px) {
-  .slide-container {
-    margin-top:220px;
+  .slide-text {
+    top: 30vh;
   }
+
   #armenia-text {
     font-size: 130px;
   }
@@ -305,8 +310,8 @@
   }
   .home-carousel-item {
     position: absolute;
-    width: 320px;
-    height: 185px;
+    width: 300px;
+    height: 187px;
     top: 20px;
     left: 10px;
     right: 10px;
@@ -317,43 +322,43 @@
 
   .home-carousel-item:nth-child(1) {
     background-image: url("../pictures/home/1.jpg");
-    transform: rotateY(0deg) translateZ(470px);
+    transform: rotateY(0deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(2) {
     background-image: url("../pictures/home/2.jpg");
-    transform: rotateY(40deg) translateZ(470px);
+    transform: rotateY(40deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(3) {
     background-image: url("../pictures/home/3.jpg");
-    transform: rotateY(80deg) translateZ(470px);
+    transform: rotateY(80deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(4) {
     background-image: url("../pictures/home/4.jpg");
-    transform: rotateY(120deg) translateZ(470px);
+    transform: rotateY(120deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(5) {
     background-image: url("../pictures/home/5.jpg");
-    transform: rotateY(160deg) translateZ(470px);
+    transform: rotateY(160deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(6) {
     background-image: url("../pictures/home/1.jpg");
-    transform: rotateY(200deg) translateZ(470px);
+    transform: rotateY(200deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(7) {
     background-image: url("../pictures/home/2.jpg");
-    transform: rotateY(240deg) translateZ(470px);
+    transform: rotateY(240deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(8) {
     background-image: url("../pictures/home/3.jpg");
-    transform: rotateY(280deg) translateZ(470px);
+    transform: rotateY(280deg) translateZ(430px);
   }
   .home-carousel-item:nth-child(9) {
     background-image: url("../pictures/home/4.jpg");
-    transform: rotateY(320deg) translateZ(470px);
+    transform: rotateY(320deg) translateZ(430px);
   }
 
   .home-carousel-item:nth-child(10) {
     background-image: url("../pictures/home/5.jpg");
-    transform: rotateY(360deg) translateZ(470px);
+    transform: rotateY(360deg) translateZ(430px);
   }
 }

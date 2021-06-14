@@ -3,12 +3,14 @@
 @import url(main.css);
 @import url(navSocialNetwork.css);
 @import url(footer.css);
-@import url(slide.css);
-@import url(login.css);
 
-body {
-  background-color: black;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
+
 .container {
   min-height: 100vh;
   overflow-x: hidden;
