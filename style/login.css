@@ -1,89 +1,27 @@
-.wrapper {
-  display: none;
-  position: absolute;
-  overflow: hidden;
-  z-index: 1;
-  top: 200px;
-  left: 40%;
-  max-width: 390px;
+.login-bar {
+  width: 400px;
+  margin: 100px auto;
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
-.wrapper .wrap-closing-icon {
-  position: absolute;
-  right: 20px;
-}
-
-.wrapper .title-text {
+.login-bar .title-text {
   display: flex;
   width: 200%;
 }
 
-.wrapper .title-text .title {
+.login-bar .title-text .title {
   width: 50%;
   font-size: 35px;
   font-weight: 600;
   text-align: center;
 }
 
-.wrapper .form-container {
+.login-bar .form-container {
   width: 100%;
-  overflow: hidden;
 }
 
-.form-container .slide-controls {
-  position: relative;
-  display: flex;
-  height: 50px;
-  width: 100%;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 30px 0 10px 0;
-  justify-content: space-between;
-  border: 1px solid black;
-}
-
-.slide-controls .slide {
-  height: 100%;
-  width: 100%;
-  font-size: 18px;
-  font-weight: 500;
-  z-index: 1;
-  color: #fff;
-  text-align: center;
-  line-height: 48px;
-  cursor: pointer;
-  transition: all 0.6s ease;
-}
-.slide-controls .signup {
-  color: black;
-}
-.slide-controls .slide-tab {
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  left: 0;
-  z-index: 0;
-  border-radius: 5px;
-  background-color: black;
-  transition: 0.6s cubic-bezier(0.679, -0.542, 0.277, 1.539);
-}
-
-input[type='radio']{
-  display: none;
-}
-
-#signup:checked ~ .slide-tab {
-  left: 50%;
-}
-#signup:checked ~ .signup{
-  color: #fff;
-}
-#signup:checked ~ .login{
-  color: #000;
-}
 .form-container .form-inner {
   display: flex;
   width: 200%;
@@ -112,27 +50,6 @@ input[type='radio']{
   border-color: black;
 }
 
-.form-inner form .pass-link {
-  margin-top: 5px;
-}
-
-.form-inner form .pass-link a,
-.form-inner form .signup-link a {
-  color: #110e0f;
-  text-decoration: none;
-}
-
-.form-inner form .signup-link {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.form-inner form .pass-link a:hover,
-.form-inner form .signup-link a:hover {
-  text-decoration: underline;
-  font-size: 19px;
-}
-
 form .field input[type="submit"] {
   color: #fff;
   font-size: 20px;
@@ -141,4 +58,10 @@ form .field input[type="submit"] {
   background-color: black;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 410px){
+  .login-bar {
+    width: 100%;
+  }
 }
