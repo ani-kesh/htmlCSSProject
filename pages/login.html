@@ -12,15 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href='../fontawesome-free-5.15.3-web/css/all.css'>
-    <link rel="stylesheet" href="../style/cities.css">
-    <link rel="stylesheet" href="../style/slide.css">
     <link rel="stylesheet" href="../style/style.css">
 
+    <!--Script start-->
+        <script defer src="../script/login.js"></script>
+    <!--Script end-->
 
 </head>
 
-<body style="background-color: black;">
-    <h1 style="display:none;">Armenia</h1>
+<body >
+    <h1>Armenia</h1>
 
 
     <header class="header-bar">
@@ -47,37 +48,63 @@
            </form>
         </nav>
     </header>
-    <div class='login-bar'>
-        <div class='title-text'>
-            <div class='title login'>Login Form</div>
+    <div class="login-bar">
+        <div class="title-text">
+           <div class="title login">
+              Login Form
+           </div>
+           <div class="title signup">
+              Signup Form
+           </div>
         </div>
-        <div class='form-container'>
-            <div class='form-inner'>
-                <form action="#" class='login'>
-                    <div class='field'>
-                        <input type='text' placeholder="Email Address" required tabindex="1">
-                    </div>
-                    <div class='field'>
-                        <input type='password' placeholder="Password" required tabindex="2">
-                    </div>
-                    <div class='field'>
-                        <input type='password' placeholder="Confirm password" required tabindex="3">
-                    </div>
-                    <div class='field'>
-                        <input type='tel' placeholder="+374 127 001" required tabindex="4">
-                    </div>
-                    <div class='field'>
-                        <input type='submit' value='Login' placeholder="3">
-                    </div>
-                </form>
-            </div>
+        <div class="form-container">
+           <div class="slide-controls">
+              <input type="radio" name="slide" id="login" checked>
+              <input type="radio" name="slide" id="signup">
+              <label for="login" class="slide login">Login</label>
+              <label for="signup" class="slide signup">Signup</label>
+              <div class="slider-tab"></div>
+           </div>
+           <div class="form-inner">
+              <form action="#" class="login">
+                 <div class="field">
+                    <input type="text" placeholder="Email Address" required>
+                 </div>
+                 <div class="field">
+                    <input type="password" placeholder="Password" required>
+                 </div>
+                 <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                 </div>
+                 <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Login">
+                 </div>
+                 <div class="signup-link">
+                    Not a member? <a href="">Signup now</a>
+                 </div>
+              </form>
+              <form action="#" class="signup">
+                 <div class="field">
+                    <input type="text" placeholder="Email Address" required>
+                 </div>
+                 <div class="field">
+                    <input type="password" placeholder="Password" required>
+                 </div>
+                 <div class="field">
+                    <input type="password" placeholder="Confirm password" required>
+                 </div>
+                 <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Signup">
+                 </div>
+              </form>
+           </div>
         </div>
-    </div>
-  
+     </div> 
     <footer>
         © Copyright 2021. Armenian Tour Company.
     </footer>
-
     <div id="social-network">
         <ul class="social-network-icons">
             <li><img src="../pictures/icons/facebook.png" width="30" alt="facebook icon" /></li>

@@ -1,6 +1,16 @@
 
-html body {
-    background-color: #fff 
+
+
+.container-bar {
+    height: 410px;
+    width: 100%;
+    position: relative;
+    top: 70px;
+
+}
+.container-bar img {
+    width: 100%;
+    height: auto;
 }
 
 .info {
@@ -11,9 +21,32 @@ html body {
 }
 .article-text {
     padding-left: 150px;
-}
-.article-text p {
-    font-size: 25px;
-    width: 500px;
+    text-indent: 20px;
+    height: 350px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 50px;
+    width: 50%;
+    text-shadow: 1px 1px 1px #000;
 }
 
+@media screen and (max-width: 922px){
+    .container-bar{
+        margin: 0 auto;
+    }
+    .container-bar .info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-bar img{
+       width: 250px;
+       height: 200px;
+    };
+}
+@media screen and (max-width: 1200px) {
+    .container-bar .article-text {
+    width: 100%;
+    }
+}
