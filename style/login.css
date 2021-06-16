@@ -164,7 +164,6 @@ form .btn input[type="submit"]{
   cursor: pointer;
 }
 
-}
 @media screen and (max-width: 410px) {
   .login-bar {
     width: 100%;
