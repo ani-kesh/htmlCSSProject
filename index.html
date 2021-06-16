@@ -33,6 +33,7 @@
 
     <!-- styles end -->
 
+    <script src="script/notification.js" defer></script>
 </head>
 
 <body>
@@ -96,6 +97,14 @@
         </ul>
     </div>
 
+    <div class="notification-container" id="notification-container">
+        <div class="notification" onclick="showHideNotification(this)" data-not-visibility="false">
+            <div id="icon-notification">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div id="count-notification">0</div>
+        </div>
+    </div>
 </body>
 
 </html>

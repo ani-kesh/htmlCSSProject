@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+}
+
+#item-container {
+  width: 60%;
+  height: 60vh;
+  margin: 20vh auto;
+  background-color: white;
+  opacity: 0.8;
+  font-size:50vh;
+  font-weight: 900;
+  text-align: center;
+}
