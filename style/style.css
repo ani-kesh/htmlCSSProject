@@ -1,4 +1,3 @@
-
 @import url(map.css);
 @import url(logo.css);
 @import url(header.css);
@@ -6,13 +5,12 @@
 @import url(navSocialNetwork.css);
 @import url(footer.css);
 @import url(slide.css);
-@import url(cities.css);
 @import url(login.css);
 @import url(notification.css);
 @import url(citiesInfo.css);
 
 body {
-  background-color: black;
+  background-color: black !important;
 }
 .container {
   min-height: 100vh;

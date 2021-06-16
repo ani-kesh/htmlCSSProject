@@ -22,23 +22,23 @@ function showHideNotification(that) {
   }
 }
 
-function createNotificationNav(){
-    let rightSide = document.createElement("div");
-    rightSide.className = "notification-nav";
-    rightSide.id = "notification-nav";
+function createNotificationNav() {
+  let rightSide = document.createElement("div");
+  rightSide.className = "notification-nav";
+  rightSide.id = "notification-nav";
 
-    document.body.append(rightSide);
-    for (let i = 0; i < notifications.length; i++) {
-      createEachNotification(notifications[i], notifications);
-    }
+  document.body.append(rightSide);
+  for (let i = 0; i < notifications.length; i++) {
+    createEachNotification(notifications[i], notifications);
+  }
 }
 function createEachNotification(notificationItem, notifications) {
   let notification = document.createElement("div");
   notification.className = "notification-item";
   notification.id = notificationItem.id;
-//   notification.addEventListener("click", () => {
-//       openNotification(notificationItem.id);
-//     });
+
+  let closeDiv = document.createElement("div");
+  closeDiv.className = "close-container";
 
   let closeIcon = document.createElement("i");
   closeIcon.className = "fas fa-times";
@@ -50,12 +50,17 @@ function createEachNotification(notificationItem, notifications) {
   title.className = "notification-title";
   title.innerText = notificationItem.title + notificationItem.id;
 
-  let description = document.createElement("p");
+  let description = document.createElement("div");
   description.className = "notification-description";
-  description.innerText = notificationItem.title + notificationItem.id;
+  description.innerText = notificationItem.description + notificationItem.id;
+  description.title = "Open notification";
+  description.addEventListener("click", () => {
+    openNotification(notificationItem.id);
+  });
 
-  notification.append(closeIcon);
-  notification.append(title);
+  closeDiv.append(closeIcon);
+  closeDiv.append(title);
+  notification.append(closeDiv);
   notification.append(description);
 
   document.getElementById("notification-nav").append(notification);
@@ -90,29 +95,32 @@ function removeNotification() {}
 
 function getNotifications() {
   notifications = [
-    { id: 0, title: "Title", description: "Description" },
-    { id: 1, title: "Title", description: "Description" },
-    { id: 2, title: "Title", description: "Description" },
-    { id: 3, title: "Title", description: "Description" },
-    { id: 4, title: "Title", description: "Description" },
-    { id: 5, title: "Title", description: "Description" },
-    { id: 6, title: "Title", description: "Description" },
-    { id: 7, title: "Title", description: "Description" },
-    { id: 8, title: "Title", description: "Description" },
-    { id: 9, title: "Title", description: "Description" },
-    { id: 10, title: "Title", description: "Description" },
-    { id: 11, title: "Title", description: "Description" },
-    { id: 12, title: "Title", description: "Description" },
-    { id: 13, title: "Title", description: "Description" },
-    { id: 14, title: "Title", description: "Description" },
+    {
+      id: 0,
+      title: "Title for first element ",
+      description: "Description",
+    },
+    { id: 1, title: "Title ", description: "Description " },
+    { id: 2, title: "Title ", description: "Description " },
+    { id: 3, title: "Title ", description: "Description " },
+    { id: 4, title: "Title ", description: "Description " },
+    { id: 5, title: "Title ", description: "Description " },
+    { id: 6, title: "Title ", description: "Description " },
+    { id: 7, title: "Title ", description: "Description " },
+    { id: 8, title: "Title ", description: "Description " },
+    { id: 9, title: "Title ", description: "Description " },
+    { id: 10, title: "Title ", description: "Description " },
+    { id: 11, title: "Title ", description: "Description " },
+    { id: 12, title: "Title ", description: "Description " },
+    { id: 13, title: "Title ", description: "Description " },
+    { id: 14, title: "Title ", description: "Description " },
   ];
   return notifications;
 }
 
-
-function openNotification(id){
-    let hostName = window.location.hostname;
-    console.log(hostName)
-    let url = `${hostName}/pages/${(location.port ? ':'+location.port + '/': '')}notification.html?id=${id}`
-    window.open(url, "_blank");
+function openNotification(id) {
+  let origin = window.location.origin;
+  let url = `${origin}/pages/notification.html?id=${id}`;
+  close(id, notifications);
+  window.open(url, "_blank");
 }
