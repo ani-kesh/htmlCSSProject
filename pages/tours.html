@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
+    <script src="../script/tours.js" defer></script>
 </head>
 
 <body>
@@ -37,13 +38,13 @@
                     <a href="#"><img src="../pictures/logo.png" alt="Armenian Flag" width='150' id='logo'></a>
                 </div>
 
-                    <ul class="links">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/cities.html">Cities</a></li>
-                        <li><a href="../pages/tours.html">Tours</a></li>
-                        <li><a href="../pages/about.html">About us</a></li>
-                        <li><a href="../pages/login.html">Login</a></li>
-                    </ul>
+                <ul class="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/cities.html">Cities</a></li>
+                    <li><a href="../pages/tours.html">Tours</a></li>
+                    <li><a href="../pages/about.html">About us</a></li>
+                    <li><a href="../pages/login.html">Login</a></li>
+                </ul>
 
             </div>
             <label for='show-search' class="search-icon"><i class="fas fa-search"></i></label>
@@ -65,102 +66,149 @@
         <div class="tours-container">
             <div class="tours-flex-container">
                 <div class="tours-flex-item">
-                    <img src="../pictures/tours/1.png" width="280" alt="Welcome To Noah's Land" />
-                    <p class="tour-title">
-                        Welcome To Noah's Land
-                    </p>
+                    <div class="tour-content">
+                        <img src="../pictures/tours/1.png" width="280" alt="Welcome To Noah's Land" />
+                        <p class="tour-title">
+                            Welcome To Noah's Land
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
+                </div>
+
+
+                <div class="tours-flex-item">
+                    <div class="tour-content">
+                        <img src="../pictures/tours/2.png" width="280" alt="In the heart of ancient civilization" />
+                        <p class="tour-title">
+                            In the heart of ancient civilization
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
                 </div>
 
                 <div class="tours-flex-item">
-                    <img src="../pictures/tours/2.png" width="280" alt="In the heart of ancient civilization" />
-                    <p class="tour-title">
-                        In the heart of ancient civilization
-                    </p>
-                </div>
-                <div class="tours-flex-item">
-                    <img src="../pictures/tours/3.png" width="280" alt="Archeological tour" />
-                    <p class="tour-title">
-                        Archeological tour
-                    </p>
-                </div>
-                <div class="tours-flex-item">
-                    <img src="../pictures/tours/4.png" width="280" alt="Armenia- Anatolia" />
-                    <p class="tour-title">
-                        Armenia- Anatolia
-                    </p>
-                </div>
-                <div class="tours-flex-item">
-                    <img src="../pictures/tours/5.png" width="280" alt="Easter in Armenia" />
-                    <p class="tour-title">
-                        Easter in Armenia
-                    </p>
-                </div>
-                <div class="tours-flex-item">
-                    <img src="../pictures/tours/6.png" width="280" alt="Wine Tour" />
-                    <p class="tour-title">
-                        Wine Tour
-                    </p>
-                </div>
-                <div class="tours-flex-item">
-                    <img src="../pictures/tours/7.png" width="280" alt="Armenia-Georgia" />
-                    <p class="tour-title">
-                        Armenia-Georgia
-                    </p>
-                </div>
-                <div class="tours-flex-item">
-                    <img src="../pictures/tours/8.png" width="280" alt="Armenia with a taste of sun" />
-                    <p class="tour-title">
-                        Armenia with a taste of sun
-                    </p>
-                </div>
-                <div class="tours-flex-item">
-                    <img src="../pictures/tours/9.png" width="280" alt="Grand tour to Armenia" />
-                    <p class="tour-title">
-                        Grand tour to Armenia
-                    </p>
-                </div>
-                <div class="tours-flex-item">
-                    <img src="../pictures/tours/10.png" width="280" alt="Highlights of Armenia" />
-                    <p class="tour-title">
-                        Highlights of Armenia
-                    </p>
+                    <div class="tour-content">
+                        <img src="../pictures/tours/3.png" width="280" alt="Archeological tour" />
+                        <p class="tour-title">
+                            Archeological tour
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
                 </div>
 
-                <!-- <div id="modal-days" class="modal-days">
+                <div class="tours-flex-item">
+                    <div class="tour-content">
+                        <img src="../pictures/tours/4.png" width="280" alt="Armenia- Anatolia" />
+                        <p class="tour-title">
+                            Armenia- Anatolia
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
+                </div>
+
+                <div class="tours-flex-item">
+                    <div class="tour-content">
+                        <img src="../pictures/tours/5.png" width="280" alt="Easter in Armenia" />
+                        <p class="tour-title">
+                            Easter in Armenia
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
+                </div>
+
+                <div class="tours-flex-item">
+                    <div class="tour-content">
+                        <img src="../pictures/tours/6.png" width="280" alt="Wine Tour" />
+                        <p class="tour-title">
+                            Wine Tour
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
+                </div>
+                <div class="tours-flex-item">
+                    <div class="tour-content">
+                        <img src="../pictures/tours/7.png" width="280" alt="Armenia-Georgia" />
+                        <p class="tour-title">
+                            Armenia-Georgia
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
+                </div>
+                <div class="tours-flex-item">
+                    <div class="tour-content">
+                        <img src="../pictures/tours/8.png" width="280" alt="Armenia with a taste of sun" />
+                        <p class="tour-title">
+                            Armenia with a taste of sun
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
+                </div>
+
+                <div class="tours-flex-item">
+                    <div class="tour-content">
+                        <img src="../pictures/tours/9.png" width="280" alt="Grand tour to Armenia" />
+                        <p class="tour-title">
+                            Grand tour to Armenia
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
+                </div>
+
+                <div class="tours-flex-item">
+                    <div class="tour-content">
+                        <img src="../pictures/tours/10.png" width="280" alt="Highlights of Armenia" />
+                        <p class="tour-title">
+                            Highlights of Armenia
+                        </p>
+                    </div>
+                    <div class="book-tour">
+                        Book Now
+                    </div>
+                </div>
+
+                <div id="modal-for-book" class="modal-book">
                     <div class="modal-content">
                         <div class="modal-header">
                             <span class="close">&times;</span>
-                            <br />
-                            <br />
+                            <p class="modal-title"></p>
                         </div>
                         <div class="modal-body">
-                            <h4 class="day-title">Day 1</h4>
-                            <p class="day-description">Arrival in Armenia.</p>
-                            <h4 class="day-title">Day 2</h4>
-                            <p class="day-description">Yerevan City Tour. Amberd fortress.</p>
-                            <h4 class="day-title">Day 3</h4>
-                            <p class="day-description">Trip to the South: Khor Virap – Areni village – Noravank – Goris.</p>
-                            <h4 class="day-title">Day 4</h4>
-                            <p class="day-description">Overnight in Goris.Exploring the South: Tatev monastery – Khndzoresk
-                                Cave
-                                Town.</p>
-                            <h4 class="day-title">Day 5</h4>
-                            <p class="day-description">Karahunge – Selim caravanserai – Noratus field of cross-stones– Lake
-                                Sevan.
-                            </p>
-                            <h4 class="day-title">Day 6</h4>
-                            <p class="day-description">Trip to the North: Dilijan resort – Goshavank monastery – Dzoraget
-                            </p>
-                            <h4 class="day-title">Day 7</h4>
-                            <p class="day-description">Haghpat monastery – Ohanavank monastery – Yerevan.</p>
+                            <form name="tour-form" class="tour-form">
+                                <input type="text" placeholder="First name" />
+                                <span class="validation-text"></span>
+                                <input type="text" placeholder="Last name" />
+                                <span class="validation-text"></span>
+                                <input type="email" placeholder="Email" />
+                                <span class="validation-text"></span>
+                                <input type="tel" placeholder="Tel: +374********" />
+                                <span class="validation-text"></span>
+                            </form>
                         </div>
                         <div class="modal-footer">
-                            <input type="button" class="modal-button" value="Back" />
-                            <input type="button" class="modal-button" value="Book Now" onclick="openBookPage()" />
+                            <input type="button" class="modal-button" id="book-back" value="Back" />
+                            <input type="button" class="modal-button" id="book-now" value="Book Now" />
                         </div>
                     </div>
 
-                </div> -->
+                </div>
             </div>
         </div>
     </main>
