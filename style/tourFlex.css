@@ -5,7 +5,10 @@
 }
 
 .tours-flex-item {
+  position: relative;
   width: 310px;
+  min-width: 310px;
+  min-height: 300px;
   margin: 20px;
   text-align: center;
   padding-top: 10px;
@@ -13,6 +16,25 @@
   transition: box-shadow 0.9s 0s ease;
 }
 
+.book-tour {
+  position: absolute;
+  top: 0;
+  display:none;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 8em;
+  text-align: center;
+  opacity: 0.3;
+  z-index: 55;
+}
+.tour-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 .tours-flex-item:hover {
   box-shadow: 14px 14px 16px black;
   cursor: pointer;
@@ -23,6 +45,17 @@
   font-weight: bold;
 }
 
-/* .tours-flex-item:active ~ #modal-days {
+ .tour-content:hover ~ .book-tour,.book-tour:hover{
   display: block;
-} */
+} 
+
+@media only screen and (max-width: 400px) {
+  .tours-flex-container {
+    padding-left: 0;
+  }
+
+  .tours-flex-item {
+    min-width: 280px;
+    min-height: 280px;
+  }
+}

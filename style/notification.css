@@ -50,6 +50,10 @@
   color: rgb(224, 166, 49);
 }
 
+.toggle{
+  display:block;
+}
+
 @keyframes notification {
   0% {
     right: 0;
