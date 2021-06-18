@@ -9,12 +9,11 @@ tourItems.forEach((el, index) =>
   })
 );
 
-tourFormData.forEach((el, index) =>{
+tourFormData.forEach((el, index) => {
   el.addEventListener("input", (ev) => {
     classifyByType(ev, index);
-  })
-}
-);
+  });
+});
 
 function classifyByType(ev, index) {
   let inputChar = ev.data;
@@ -28,9 +27,9 @@ function classifyByType(ev, index) {
         ? true
         : false;
 
-      tourFormData[index].addEventListener("change", (ev) => {
-        textValidation(ev, index);
-      });       
+    tourFormData[index].addEventListener("change", (ev) => {
+      textValidation(ev, index);
+    });
   } else if (type === "email") {
     inputInvalid = isEmailValid(inputChar, inputValue) ? true : false;
 
@@ -106,14 +105,14 @@ function openBook(index) {
 
   span.addEventListener("click", (ev) => {
     modal.style.display = "none";
-    tourFormData.forEach((el,index)=>{
+    tourFormData.forEach((el, index) => {
       el.value = "";
       validationMessage(ev, false, index);
     });
   });
   backBtn.addEventListener("click", (ev) => {
     modal.style.display = "none";
-    tourFormData.forEach((el,index)=>{
+    tourFormData.forEach((el, index) => {
       el.value = "";
       validationMessage(ev, false, index);
     });
@@ -121,7 +120,7 @@ function openBook(index) {
   window.addEventListener("click", (event) => {
     if (event.target === modal) {
       modal.style.display = "none";
-      tourFormData.forEach((el,index)=>{
+      tourFormData.forEach((el, index) => {
         el.value = "";
         validationMessage(event, false, index);
       });
@@ -182,3 +181,5 @@ function textValidation(ev, index) {
     return;
   }
 }
+
+

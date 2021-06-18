@@ -128,14 +128,14 @@ function getNotifications() {
   return notifications;
 }
 
-function openNotification(id) {
+function openNotification(id) {  
   let origin = window.location.origin;
   let path = window.location.pathname;
 
   let indexPath = path.lastIndexOf("/");
-
+ 
   let urlPath = indexPath >= 0 ? path.slice(0, indexPath) : "";
-  console.log(urlPath);
+
   let url = `${(origin, urlPath)}/pages/notification.html?id=${id}`;
   close(id, notifications);
   window.open(url, "_blank");
