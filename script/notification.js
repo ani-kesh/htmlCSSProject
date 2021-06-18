@@ -7,18 +7,28 @@ window.onload = function pageLoad() {
   else document.getElementById("notification-container").style.display = "none";
 };
 
+document.getElementById("notification").addEventListener(
+  "click",
+  () => {
+    showHideNotification();
+  },true
+);
+
 let notifications = [];
 
-function showHideNotification(that) {
-  let showHideNot = that.getAttribute("data-not-visibility");
+function showHideNotification() {
+  let notContainer = document.querySelector("#notification-container");
+
+  let classNameNotContainer = notContainer.getAttribute("class");
+
   const notificationNav = document.getElementById("notification-nav");
   if (notificationNav !== null) notificationNav.remove();
 
-  if (showHideNot === "false") {
-    createNotificationNav();
-    that.setAttribute("data-not-visibility", true);
+  if (classNameNotContainer.includes("toggle")) {
+    notContainer.classList.remove("toggle");
   } else {
-    that.setAttribute("data-not-visibility", false);
+    createNotificationNav();
+    notContainer.classList.add("toggle");
   }
 }
 
@@ -44,7 +54,7 @@ function createEachNotification(notificationItem, notifications) {
   closeIcon.className = "fas fa-times";
   closeIcon.addEventListener("click", () => {
     close(notificationItem.id, notifications);
-  });
+  },false);
 
   let title = document.createElement("h4");
   title.className = "notification-title";
@@ -118,14 +128,14 @@ function getNotifications() {
   return notifications;
 }
 
-function openNotification(id) {
+function openNotification(id) {  
   let origin = window.location.origin;
   let path = window.location.pathname;
 
   let indexPath = path.lastIndexOf("/");
+ 
+  let urlPath = indexPath >= 0 ? path.slice(0, indexPath) : "";
 
-  let urlPath = indexPath >= 0 ?path.slice(0,indexPath): "";
-  console.log(urlPath)
   let url = `${(origin, urlPath)}/pages/notification.html?id=${id}`;
   close(id, notifications);
   window.open(url, "_blank");
