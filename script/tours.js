@@ -2,6 +2,7 @@ let tourItems = document.querySelectorAll(".book-tour");
 let tourTitles = document.querySelectorAll(".tour-title");
 let tourFormData = document.querySelectorAll(".tour-form input");
 let invalidMessage = document.querySelectorAll(".tour-form span");
+let bookNow = document.querySelectorAll("#book-now");
 
 tourItems.forEach((el, index) =>
   el.addEventListener("click", () => {
@@ -14,6 +15,7 @@ tourFormData.forEach((el, index) => {
     classifyByType(ev, index);
   });
 });
+
 
 function classifyByType(ev, index) {
   let inputChar = ev.data;
